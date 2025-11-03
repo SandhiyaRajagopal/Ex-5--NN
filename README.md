@@ -1,8 +1,9 @@
+# EX. NO.5 Implementation of XOR using RBF
 <H3>ENTER YOUR NAME: SANDHIYA R</H3>
-<H3>ENTER YOUR REGISTER NO: 212223240146</H3>
+<H3>ENTER YOUR REGISTER NO.: 212223240146</H3>
 <H3>EX. NO.5</H3>
-<H3>DATE: 03/11/25</H3>
-<H1 ALIGN =CENTER>Implementation of XOR  using RBF</H1>
+<H3>DATE: 03.11.2025</H3>
+
 <H3>Aim:</H3>
 To implement a XOR gate classification using Radial Basis Function  Neural Network.
 
@@ -19,21 +20,25 @@ A Radial Basis Function Network (RBFN) is a particular type of neural network. T
 A Neural network with input layer, one hidden layer with Radial Basis function and a single node output layer (as shown in figure below) will be able to classify the binary data according to XOR output.
 </P>
 
+<H3>Algorithm:</H3>
 
-
-
-
-<H3>ALGORITHM:</H3>
 Step 1: Initialize the input  vector for you bit binary data<Br>
+
 Step 2: Initialize the centers for two hidden neurons in hidden layer<Br>
+
 Step 3: Define the non- linear function for the hidden neurons using Gaussian RBF<br>
+
 Step 4: Initialize the weights for the hidden neuron <br>
+
 Step 5 : Determine the output  function as 
                  Y=W1*φ1 +W1 *φ2 <br>
+
 Step 6: Test the network for accuracy<br>
+
 Step 7: Plot the Input space and Hidden space of RBF NN for XOR classification.
 
-<H3>PROGRAM:</H3>
+<H3>Program:</H3>
+
 ```
 import numpy as np
 import matplotlib.pyplot as plt
@@ -93,11 +98,12 @@ print(f"Input:{np.array([0, 0])}, Predicted: {predict_matrix(np.array([0, 0]), w
 print(f"Input:{np.array([0, 1])}, Predicted: {predict_matrix(np.array([0, 1]), w)}")
 print(f"Input:{np.array([1, 0])}, Predicted: {predict_matrix(np.array([1, 0]), w)}")
 print(f"Input:{np.array([1, 1])}, Predicted: {predict_matrix(np.array([1, 1]), w)}")
+
 ```
 
-<H3>OUTPUT:</H3>
+<H3>Output:</H3>
 
-<img width="1129" height="650" alt="image" src="https://github.com/user-attachments/assets/bb9e5f05-f75b-4b5a-8d7f-0cf48bfdc3fb" />
+<img width="1129" height="650" alt="Screenshot 2025-10-31 091706" src="https://github.com/user-attachments/assets/e057a400-4585-453e-bae9-c85265dbc175" />
 
 
 <H3>Result:</H3>
